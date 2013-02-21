@@ -1,39 +1,46 @@
 
 body {
 	font-size: 16pt;
-	font-family:Palatino Linotype, Book Antiqua, sans-serif;
-	line-height:14pt; 
+	font-family: 'Droid Serif', serif;
+	line-height:1.5em; 
 	padding: 40px; 
-	margin: 50px 0px; 
+	margin: 40px auto; 
 	text-align: center;
-	background-color: rgb(119, 221, 119);
+	background-image: url(paper_3.png)
 	}
 
 #content {
 	width: 800px;
-	float: left;
-	background-color: #eee9e9; 
-	padding: 20px;
 	text-align: center;
 	margin-left: auto;
-	margin-right: auto;  
-	line-height: 100%; 
-	border-style: solid;  
-	padding-bottom: 80px; 
-	margin-bottom: 30px; 
+	margin-right: 20px;  
+	line-height: 1.5em; 
+	margin-bottom: 30px;
+	border-style: double none double; 
+	border-width: 10px;
+	border-color: rgb(202, 72, 48);
 	}
 
 #header {  
-	float: left; 
-	width: 100%;
-	margin: 0px; 
+	font-family: 'Calligraffitti', cursive;
+	font-size: 27pt; 
+	text-align: right; 
+	margin-right:50px; 
+	width: 100%; 
+	}
+
+#header img { 
+	align: left;
+	position: absolute;
+	top: 20px;   
+	margin-top: 50px; 
 	}
 
 #wrapper { 
 	min-height: 100%; 
 	margin-left: auto;
 	margin-right: auto;  
-	border: 1px solid; 
+	border: 6px solid; 
 	width: 50em;
 	border-color: transparent; 
 	}
@@ -51,7 +58,7 @@ h1 {
 	font-weight: bold; 
 	font-style: italic;
 	line-height: 20pt;
-	color: rgb(0, 153, 76); 
+	color: black; 
 	}
 
 ul {
@@ -59,7 +66,7 @@ ul {
 	font-weight: bold; 
 	display: block; 
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
+	background-color: rgb(144, 90, 26);   
 	color: white;
 	bottom-border: none;
 	}
@@ -70,13 +77,13 @@ a {
 	}
 
 blockquote {
-	background-color: rgb(0, 153, 76);
-	border-bottom: 4px solid #000; 
+	background-color: rgb(202, 72, 48);
+	border-bottom: 6px solid #000; 
 	border-top: 4px solid #000; 
 	padding: 10px 3px 10px 8px;
 	font-color: white; 
-	font-family: Tahoma, Geneva, sans-serif; 
-	line-height: 100%; 
+	font-family: 'Droid Serif', serif;
+	line-height: 1.5em; 
 	} 
 	
 
@@ -109,8 +116,9 @@ blockquote {
 	font-weight: bold; 
 	display: block; 
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
-	color: white;
+	background-color: rgb(157, 149, 140);     
+	color: black;
+	font-family: 'Droid Serif', serif;
 	}
 
 
@@ -119,8 +127,8 @@ blockquote {
 	font-weight: bold; 
 	display: block; 
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
-	color: white;
+	background-color: rgb(157, 149, 140);  
+	color: black; 
 	}
 	
 #nav ul li a:hover, #nav ul li a:active {
@@ -128,8 +136,8 @@ blockquote {
 	font-weight: bold; 
 	display: block;
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
-	color: white;
+	background-color: rgb(157, 149, 140);  
+	color: black; 
 	}
 
 #nav ul ul {
@@ -146,8 +154,9 @@ blockquote {
 	font-weight: bold; 
 	display: block; 
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
-	color: white;
+	background-color: rgb(157, 149, 140);   
+	color: black; 
+	font-family: 'Droid Serif', serif;
 	}
 	
 #nav ul ul li a:hover, #nav ul ul li a:active {
@@ -155,8 +164,9 @@ blockquote {
 	font-weight: bold; 
 	display: block;
 	padding: 3px 0px 3px 3px;
-	background-color: rgb(0, 153, 76);   
-	color: white;
+	background-color: rgb(157, 149, 140);   
+	color: black; 
+	font-family: 'Droid Serif', serif;
 	}
 
 
