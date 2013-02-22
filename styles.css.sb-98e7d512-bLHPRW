@@ -21,15 +21,17 @@ body {
 	border-color: rgb(202, 72, 48);
 	}
 
-#container {
+#logo {  
+	font-family: 'Calligraffitti', cursive;
+	font-size: 27pt; 
+	text-align: right;  
+	width: 100%; 
 	}
 
-#header {  
-	font-family: 'Calligraffitti', cursive;
-	font-size: 26pt; 
-	height: 100%; 
-	width: 100%; 
-	padding-left: 110px;  
+
+#logo img { 
+	float: left;
+	margin: auto;  
 	}
 
 #wrapper { 
@@ -39,7 +41,6 @@ body {
 	border: 6px solid; 
 	width: 50em;
 	border-color: transparent; 
-	margin-top: 0px; 
 	}
 
 #footer {

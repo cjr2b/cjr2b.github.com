@@ -16,6 +16,13 @@
 <link rel="stylesheet" type:"text/css" href="styles.css" />
 
 
+<style>
+	img {
+	float: left; 
+	}
+
+</style>
+
 </head>
 
 
@@ -23,17 +30,11 @@
 
 <div id="wrapper">
 
-<div id="container">
+ <div id="logo">
 
- <div id="header">
-	
-	<img src="forklogo.jpg"/>
-
-	<h1>Christina's History Portfolio</h1>
+	<h1><img src="forklogo.jpg" alt="#"/>Christina's History Portfolio</h1>
 
 </div> 
-
-</div>
  
 
 <div id="nav">
@@ -58,7 +59,7 @@
 
 
 <blockquote>
-<p> <img style="float:left" src="GeorgeWashington.bmp" alt="George Washington" align: bottom/> "My manner of living is plain…a glass of wine and a bit of mutton are always ready—such as will be content to partake of it are welcome—those who expect more will be disappointed…"</p> <p>—George Washington, 1786</p>
+<p> <img src="GeorgeWashington.bmp" alt="George Washington" align: bottom/> "My manner of living is plain…a glass of wine and a bit of mutton are always ready—such as will be content to partake of it are welcome—those who expect more will be disappointed…"</p> <p>—George Washington, 1786</p>
 </blockquote>
 
 <p> My final project will exhibit my research on foodways in colonial Virginia.</p>
