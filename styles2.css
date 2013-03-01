@@ -1,0 +1,312 @@
+
+body { 
+	background-color: rgb(157, 149, 140); 
+	background-image: url(mountvernon.jpg);
+	background-repeat: no-repeat;   
+	background-position: center; 
+	background-attachment: fixed; 
+	padding: 45px 55px 55px 45px; 
+	margin: 0; 
+	} 
+
+
+#wrapper { 
+	width: 750px; 
+	margin: 0 auto; 
+	}
+
+
+h1 { 
+	font-size: 45pt; 
+	font-family: 'Calligraffitti', cursive;
+	text-align: center; 
+	} 
+
+h2 { 
+	font-size: 30pt; 
+	font-family: 'Calligraffitti', cursive;
+	padding: 0; 
+	margin: 0; 
+	} 
+
+
+
+#header {   
+	margin: auto; 
+	padding: 10px 40px 10px; 
+	} 
+
+#logo { 
+	float: left;
+	margin: 0; 
+	padding: 0;  
+	}
+
+
+#content {  
+	background-color: white;
+	font-family: 'Junge', serif;
+	margin: auto; 
+	text-align: center;
+	padding: 10px 40px 10px;
+	border: 5px solid black; 
+	width: 75%; 
+	float: right; 
+	} 
+
+#content a { 
+	text-decoration: none; 
+	font-weight: bold; 
+	}
+
+blockquote {
+	background-color: rgb(202, 72, 48);
+	border: 4px groove black;
+	padding: 5px; 
+	font-family: 'Junge', serif;
+	line-height: 1.5em; 
+	} 
+
+ol, ul, li{ 
+	list-style-type: square;
+	text-align: left; 
+} 
+
+
+#nav { 
+	padding: 10px 40px 10px;    
+	text-align: center;
+	background-color: rgb(157, 149, 140);  
+	margin: 20px 0px 20px;  
+	border: 5px solid black;  
+	}
+
+#nav a {
+	font-family: 'Junge', serif;
+	text-decoration: none; 
+	font-weight: bold; 
+	font-size: 15pt; 
+	margin: 0px 30px 0px;  
+	display: inline; 
+	padding: 20px 23px 20px 23px; 
+	}
+
+#nav ul {
+	list-style: none; 
+	margin: 0px;   
+	padding: 0px; 
+	display: inline;  
+	}
+
+#nav li {
+	display: inline; 
+	line-height: 1.8em; 
+	font-family: 'Junge', serif;
+	} 
+
+#nav ul li a:visited { 
+	color: black;  
+	padding: 20px 23px 20px 23px; 
+	}
+	
+
+#nav ul li a:hover { 
+	text-decoration: none; 
+	color: black; 
+	background-color: rgb(202, 72, 48);
+	padding: 20px 23px 20px 23px; 
+	}
+
+
+#sidebar 
+	{ 
+	background-color:  rgb(202, 72, 48);
+	width: 15%;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px; 
+	text-align: center;
+	border: 5px groove black;  
+	float: left; 
+	font-family: 'Junge', serif;
+	display: inline; 
+	position: relative; 
+	padding: 10px; 
+	} 
+
+#footer { 
+	text-align: center; 
+	font-family: 'Junge', serif;
+	clear: both; 
+	padding: 10px; 
+	margin: auto; 
+	} 
+
+
+
+/*
+ * Default styles
+ */
+
+/*
+ * 300px and wider
+ */
+@media screen and (max-width: 400px) {
+	
+	#sidebar {
+		width: 75%; 
+		margin: auto; 
+		}
+
+	#header { 
+		width: 75%; 
+		}
+
+	#content { 
+		margin: auto; 
+		margin-top: 10px; 
+		float: left; 
+		}
+	#nav { 
+		width: 75%; 
+		}
+
+	#nav a { 
+		font-size: 8pt; 
+		padding: 0; 
+		margin: 2px;  
+		}
+
+	h1 { 
+		font-size: 25pt; 
+		}
+
+	#nav ul li a:hover { 
+		text-decoration: none; 
+		color: black; 
+		background-color: rgb(202, 72, 48);
+		padding: 0px; 
+		}
+
+}
+
+
+/*
+ * 600px and wider
+ */
+@media screen and (max-width: 550px) {
+
+	
+	#sidebar {
+		width: 75%; 
+		margin: auto; 
+		}
+
+	#header { 
+		width: 75%; 
+		}
+
+	#content { 
+		margin: auto; 
+		margin-top: 10px; 
+		float: left; 
+		}
+	#nav { 
+		width: 75%; 
+		}
+
+	#nav a { 
+		font-size: 8pt; 
+		padding: 0px; 
+		}
+
+	h1 { 
+		font-size: 25pt; 
+		}
+
+	#nav ul li a:hover { 
+		text-decoration: none; 
+		color: black; 
+		background-color: rgb(202, 72, 48);
+		padding: 0px; 
+		}
+	
+} 
+
+
+/*
+ * 
+ */
+@media screen and (max-width: 800px) {
+
+	#sidebar {
+		width: 75%; 
+		margin: auto; 
+		}
+
+	#header { 
+		width: 75%; 
+		}
+
+	#content { 
+		margin: auto; 
+		margin-top: 10px; 
+		float: left; 
+		}
+	#nav { 
+		width: 75%; 
+		}
+
+	#nav a { 
+		font-size: 10pt; 
+		text-align: left; 
+		}
+	#logo { 
+		float: left; 
+		}
+	h1{ 
+		font-size: 25pt; 
+		}
+
+	#nav ul li a:hover { 
+		text-decoration: none; 
+		color: black; 
+		background-color: rgb(202, 72, 48);
+		padding: 0px; 
+		}
+} 
+
+
+/*
+ * 
+ */
+@media screen and (max-width: 1300px) {
+
+	#sidebar {
+		width: 80%; 
+		margin: auto; 
+		}
+
+	#header { 
+		width: 75%; 
+		}
+
+	#content { 
+		margin: auto; 
+		margin-top: 10px; 
+		float: left; 
+		}
+
+	#nav { 
+		width: 75%; 
+		}
+
+	#nav a { 
+		font-size: 10pt; 
+		text-align: left; 
+		}
+	
+
+} 
+
+
+
