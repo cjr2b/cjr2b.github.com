@@ -27,13 +27,18 @@ h2 {
 	font-family: 'Calligraffitti', cursive;
 	padding: 0; 
 	margin: 0; 
+	text-align: center;
 	} 
 
 
+h3 { 
+	font-family: 'Calligraffitti', cursive;
+	text-align: center;
+	} 
 
 #header {   
 	margin: auto; 
-	padding: 10px 40px 10px; 
+	padding: 10px 40px 10px;  
 	} 
 
 #logo { 
@@ -44,12 +49,13 @@ h2 {
 
 
 #content {  
-	background-color: white;
+	background-color: rgb(205,192,176);
+	background-color: rgba(205, 192, 176, 0.6); 
 	font-family: 'Junge', serif;
 	margin: auto; 
-	text-align: center;
+	text-align: left;
 	padding: 10px 40px 10px;
-	border: 5px solid black; 
+	border: 1px solid black; 
 	width: 75%; 
 	float: right; 
 	} 
@@ -58,14 +64,21 @@ h2 {
 #content a { 
 	text-decoration: none; 
 	font-weight: bold; 
+	color: rgb(64, 64, 64); 
+	}
+
+#content a: visited {
+	color: rgb(202, 72, 48);
 	}
 
 blockquote {
 	background-color: rgb(202, 72, 48);
-	border: 4px groove black;
+	border: 2px groove black;
 	padding: 5px; 
 	font-family: 'Junge', serif;
 	line-height: 1.5em; 
+	font-size: 14pt; 
+	text-align: center; 
 	} 
 
 ol, ul, li{ 
@@ -79,7 +92,7 @@ ol, ul, li{
 	text-align: center;
 	background-color: rgb(157, 149, 140);  
 	margin: 20px 0px 20px;  
-	border: 5px solid black;  
+	border: 1px solid black;  
 	}
 
 #nav a {
@@ -122,14 +135,14 @@ ol, ul, li{
 #sidebar 
 	{ 
 	background-color:  rgb(202, 72, 48);
+	background-color:  rgba(202, 72, 48, 0.8);
 	width: 15%;
 	font-family: Helvetica, Arial, sans-serif;
 	margin: 0px; 
 	text-align: center;
-	border: 5px groove black;  
+	border: 1px groove black;  
 	float: left; 
-	font-family: 'Junge', serif;
-	display: inline; 
+	font-family: 'Junge', serif; 
 	position: relative; 
 	padding: 10px; 
 	} 
@@ -153,39 +166,17 @@ ol, ul, li{
  */
 @media screen and (max-width: 400px) {
 	
-	#sidebar {
-		width: 75%; 
-		margin: auto; 
-		}
-
-	#header { 
-		width: 75%; 
-		}
-
-	#content { 
-		margin: auto; 
-		margin-top: 10px; 
-		float: left; 
-		}
-	#nav { 
-		width: 75%; 
-		}
-
-	#nav a { 
-		font-size: 8pt; 
-		padding: 0; 
-		margin: 2px;  
-		}
+	#sidebar,
+ 	#content,
+ 	#header,
+ 	#nav {
+   		float:none;
+   		width:auto;
+   		display:block;
+ }
 
 	h1 { 
 		font-size: 25pt; 
-		}
-
-	#nav ul li a:hover { 
-		text-decoration: none; 
-		color: black; 
-		background-color: rgb(202, 72, 48);
-		padding: 0px; 
 		}
 
 }
@@ -197,40 +188,18 @@ ol, ul, li{
 @media screen and (max-width: 550px) {
 
 	
-	#sidebar {
-		width: 75%; 
-		margin: auto; 
-		}
-
-	#header { 
-		width: 75%; 
-		}
-
-	#content { 
-		margin: auto; 
-		margin-top: 10px; 
-		float: left; 
-		}
-	#nav { 
-		width: 75%; 
-		}
-
-	#nav a { 
-		font-size: 8pt; 
-		padding: 0px; 
-		}
+	#sidebar,
+ 	#content,
+ 	#header,
+ 	#nav {
+   		float:none;
+   		width:auto;
+   		display:block;
+ }
 
 	h1 { 
 		font-size: 25pt; 
 		}
-
-	#nav ul li a:hover { 
-		text-decoration: none; 
-		color: black; 
-		background-color: rgb(202, 72, 48);
-		padding: 0px; 
-		}
-	
 } 
 
 
@@ -239,40 +208,20 @@ ol, ul, li{
  */
 @media screen and (max-width: 800px) {
 
-	#sidebar {
-		width: 75%; 
-		margin: auto; 
-		}
+	#sidebar,
+ 	#content,
+ 	#header,
+ 	#nav {
+   		float:none;
+   		width:auto;
+   		display:block;
+ }
 
-	#header { 
-		width: 75%; 
-		}
-
-	#content { 
-		margin: auto; 
-		margin-top: 10px; 
-		float: left; 
-		}
-	#nav { 
-		width: 75%; 
-		}
-
-	#nav a { 
-		font-size: 10pt; 
-		text-align: left; 
-		}
 	#logo { 
 		float: left; 
 		}
 	h1{ 
 		font-size: 25pt; 
-		}
-
-	#nav ul li a:hover { 
-		text-decoration: none; 
-		color: black; 
-		background-color: rgb(202, 72, 48);
-		padding: 0px; 
 		}
 } 
 
