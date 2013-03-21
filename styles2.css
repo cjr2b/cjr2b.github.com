@@ -1,4 +1,5 @@
 
+
 body { 
 	background-color: rgb(157, 149, 140); 
 	background-image: url(mountvernon.jpg);
@@ -170,7 +171,8 @@ ol, ul, li{
 	#sidebar,
  	#content,
  	#header,
- 	#nav {
+ 	#nav, 
+	{
    		float:none;
    		width:auto;
    		display:block;
@@ -180,6 +182,18 @@ ol, ul, li{
 		font-size: 25pt; 
 		}
 
+	#sidebar{ 
+		float: center; 
+		}
+	
+	blockquote {  
+		margin: 0px; 
+		font-size: 14pt; 
+		float: center; 
+		text-align: left;
+		}
+	
+	
 }
 
 
@@ -201,6 +215,20 @@ ol, ul, li{
 	h1 { 
 		font-size: 25pt; 
 		}
+
+	#sidebar{ 
+		float: center; 
+		}
+	
+	blockquote {  
+		margin: 0px; 
+		font-size: 14pt; 
+		float: center; 
+		text-align: center;
+		}
+
+	
+	
 } 
 
 
@@ -224,6 +252,10 @@ ol, ul, li{
 	h1{ 
 		font-size: 25pt; 
 		}
+
+	#sidebar{ 
+		float: center; 
+		}
 } 
 
 
@@ -232,30 +264,24 @@ ol, ul, li{
  */
 @media screen and (max-width: 1300px) {
 
-	#sidebar {
-		width: 80%; 
-		margin: auto; 
+	#sidebar, 
+	#content, 
+	#nav {
+		width: auto;  
+		float: none; 
+		display: block; 
+		margin: 10px; 
 		}
 
 	#header { 
 		width: 75%; 
 		}
 
-	#content { 
-		margin: auto; 
-		margin-top: 10px; 
-		float: left; 
-		}
-
-	#nav { 
-		width: 75%; 
-		}
 
 	#nav a { 
 		font-size: 10pt; 
 		text-align: left; 
 		}
-	
 
 } 
 
