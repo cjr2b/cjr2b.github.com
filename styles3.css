@@ -1,12 +1,12 @@
-
-body { 
-	background-color: rgb(128, 128, 128); 
-	background-image: url(finalbackground.jpg);   
-	background-position: center;  
-	background-repeat: no-repeat; 
-	background-attachment: fixed; 
-	margin: 0; 
-	} 
+html {
+  background-color: rgb(128, 128, 128);
+	background-image: url(finalbackground.jpg);
+	background-attachment: fixed;
+}
+body {
+	margin: 0 auto;
+  width: 750px;
+	}
 
 #header {     
 	margin:0; 
@@ -85,12 +85,6 @@ body {
 *html #nav ul {
 	margin:0 0 0 -2px;
 }
-
-
-#wrapper { 
-	width: 750px; 
-	margin: 0 auto; 
-	}
 
 #content {  
 	font-family:Georgia, serif; 
