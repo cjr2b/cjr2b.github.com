@@ -1,11 +1,11 @@
 html {
-  background-color: rgb(128, 128, 128);
+  	background-color: rgb(128, 128, 128);
 	background-image: url(finalbackground.jpg);
 	background-attachment: fixed;
 }
 body {
 	margin: 0 auto;
-  width: 750px;
+  	width: 750px;
 	}
 
 #header {     
@@ -18,11 +18,11 @@ body {
 	} 
 
 #nav {
-	float: right;
+	padding: 0px 0px 40px 270px; 
 	margin: auto;  
 	width: 100%; 
 	list-style:none;
-	font-family: Georgia, serif;  
+	font-family: Georgia, serif; 
 	}
 	
 #nav li {
@@ -97,29 +97,30 @@ h1 {
 	font-size: 14pt; 
 	} 
 
-#imgBox { 
-	width: 90%;  
-	height: 1500px;   
+#imgBox {     
 	background-image: url('Paper.jpg'); 
-	background-repeat: no-repeat; 
-	align: left; 
+	background-repeat: no-repeat;  
+	padding: 0px 110px 0px 0px; 
 	} 
 
 #imgBox h1 { 
-	font-size: 11pt;
+	text-align: center;
+	padding: 15px 50px 15px 5px; 
 	width: 80%; 
-	text-align: center;  
-	padding: 50px 10px 10px 10px;   
+	font-size: 15pt; 
 	}
-	
+
+img { 
+	padding: 8px; 
+	}
 
 #imgBox p { 
-	font-size: 12pt;
-	width: 75%; 
-	text-align: left;  
-	padding: 15px 10px 5px 30px;   
+	width: 80%; 
+	font-size: 12pt; 
+	text-align: left;     
 	line-height: 1.1; 
 	margin: 0px; 
+	padding: 5px 30px 15px 20px; 
 	}
 
 
