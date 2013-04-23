@@ -96,6 +96,7 @@ h1 {
 	font-family: Lucida Calligraphy, serif;
 	text-align: center; 
 	font-size: 14pt; 
+	margin: 0.5em; 
 	} 
 
 h2 { 
@@ -106,8 +107,10 @@ h2 {
 
 h3 { 
 	font-family: Georgia, serif; 
-	font-size: 14pt; 
+	font-size: 13pt; 
 	text-align: center; 
+	margin: 0.3em; 
+	padding: 0px; 
 	} 
 
 #imgBox {     
