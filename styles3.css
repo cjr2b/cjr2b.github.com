@@ -210,4 +210,38 @@ img {
     float: left;
 }
 
+.popup{ 
+	position: absolute; 
+	z-index: 100000000000000000; 
+	display: none; 
+	background-color: rgb(128, 128, 128); 
+	font-family: Georgia, serif; 
+	top: 200px; 
+	right: 10px; 
+	margin: 100px auto; 
+	width: 200px; 
+	height: 150px; 
+	padding: 10px; 
+	border: 2px solid black; 
+} 
+
+.cancel { 
+	display: relative; 
+	cursor: pointer; 
+	float: right; 
+	margin: 0; 
+	height: 10px; 
+	width: 14px; 
+	padding: 0px 0px 5px 0px; 
+	background-color: none; 
+	text-align: center; 
+	font-weight: bold; 
+	color: white; 
+	border-radius: 3px; 
+	z-index: 100000000000000000; 
+} 
+
+.cancel:hover {
+	color: rgb(199, 75, 47); 
+}
 
