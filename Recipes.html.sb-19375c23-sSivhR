@@ -1,0 +1,146 @@
+<?xml version= "1.0" encoding="UF -8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+<meta charset="utf-8">
+
+
+<title>The Dish on Washington</title>
+
+
+
+<link rel="stylesheet" type:"text/css" href="styles3.css" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="jquery.waterwheelCarousel.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+
+
+</head>
+
+<body>
+
+
+<div id="header">
+	<img src="logo.gif"/>
+</div>
+
+<div id="nav">
+	<li><a href="Homepage.html">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Introduction</a>
+		<ul>
+			<li><a href="#">Mount Vernon: A Home</a></li>
+			<li><a href="#">Slavery at Mount Vernon</a></li>
+			<li><a href="#">Farm to Table</a></li>
+		</ul>
+	</li>
+	<li><a href="#">The Table</a>
+	<ul>
+	<li><a href="DiningwiththeWashingtons.html">Dining with the Washingtons</a></li>
+		<li><a href="TableManners.html">Table Manners</a></li>
+		<li><a href="PatrioticFoods.html">Patriotic Foods</a></li>
+		<li><a href="CostofDining.html">The Cost of Dining</a></li>
+	</ul>			
+	</li>
+	<li><a href="Recipes.html">Recipes</a></li>
+
+</div>
+
+
+<div id="content">
+
+    <div id="carousel">
+      <a href="Hoecakes.pdf"><img src="Hoecakes.jpg" id="item-1"/></a>
+      <a href="Bread.pdf"><img src="Bread.jpg" id="item-2" /></a>
+      <a href="CherryPie.pdf"><img src="CherryPie.jpg" id="item-3" /></a>
+      <a href="MarthaWashingtonGreatCake.pdf"><img src="GreatCake.jpg" /></a>
+      <a href="Punch.pdf"><img src="Punch.jpg" id="item-5" /></a>
+    </div>
+
+      
+<div class="image">
+
+<img src="platesilver.gif"/>
+
+<div class="text">
+
+</div>
+
+</div>
+
+<div id="sidebar">
+
+<h1> Did you know?</h1>
+
+<p style= "font-size: 14pt;"><img src="GeorgeWashingtonFact.gif" style="float: right"/>Mrs. Washington's original Great Cake recipe called for 40 eggs, 4 pounds of butter and 4 pounds of sugar.</p>
+
+<h2>Save room for dessert!</h2>
+
+</div>
+
+
+</div>
+
+<div id="footer">
+
+<p> Christina| HIST 697 | George Mason University | Spring 2013 </p>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
