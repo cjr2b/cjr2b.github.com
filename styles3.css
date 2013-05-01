@@ -9,6 +9,7 @@ body {
   	width: 750px;
 	}
 
+
 #header {     
 	margin:0; 
 	width: 100%; 
@@ -165,6 +166,22 @@ img {
 	text-align: center; 
 	}
 
+#sidebar li {
+	display: inline;  
+	list-style-image: none; 
+	list-style-type: none; 
+	cursor: pointer; 
+	margin: 0px 30px 0px 30px; 
+	padding: 10px; 
+	align: center; 
+	}
+
+#sidebar ul { 
+	align: left; 
+	font-style: Georgia, serif; 
+	}
+
+
 #content a { 
 	text-decoration: none; 
 	font-weight: bold; 
@@ -208,6 +225,8 @@ img {
     color: #000000;
     font: 12pt/1.5 Georgia, serif;
     float: left;
+    padding: 1px; 
+    text-align: center; 
 }
 
 .popup{ 
@@ -245,3 +264,89 @@ img {
 	color: rgb(199, 75, 47); 
 }
 
+
+/*
+ * Default styles
+ */
+
+/*
+ * 300px and wider
+ */
+@media screen and (max-width: 700px) {
+ 
+body { 
+	width: 100%; 
+	}
+
+#nav { 
+	max-width: 80%;  
+	margin: auto; 
+	padding: 0; 
+	}
+
+#nav li ul:hover{ 
+	float: right; 
+	}
+
+#imgBox { 
+	width: 90%; 
+	clear: both; 
+	}
+
+#imgBox img { 
+	display: none; 
+	}
+
+#imgBox h1{
+	padding: 30px 30px 0px 30px; 
+	} 
+	
+
+#imgBox p{ 
+	font-size: 10pt; 
+	}
+
+#header img{ 
+	max-width: 90%; 
+	padding: 5px;
+	margin: 0; 
+	}
+	
+#sidebar {  
+	float: left; 
+	width: 90%;  
+	margin: 0px 0px 5px 30px; 
+	}
+
+#sidebar li { 
+	margin: 10px; 
+	padding: 5px;  
+	width: 90%; 
+	}
+
+#footer { 
+	width: 90%; 
+	float: left; 
+	}
+
+.image { 
+	display: none; 
+	}
+	
+	
+	
+}
+
+@media screen and (max-width: 650px) {
+
+#nav { 
+	margin: 5px 5px 5px 60px;
+	} 
+
+#nav li {
+	clear: both; 
+	border: 1px solid;
+	width: 90%;  
+    		}
+
+}
