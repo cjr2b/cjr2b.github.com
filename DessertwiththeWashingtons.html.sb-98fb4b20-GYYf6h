@@ -24,7 +24,6 @@
 
 <script type="text/javascript" src="popup.js"></script>
 
-
 </head>
 
 <body>
@@ -40,8 +39,8 @@
 	<li><a href="#">Introduction</a>
 		<ul>
 			<li><a href="MountVernon.html">Mount Vernon: A Home</a></li>
-			<li><a href="slavery.html">Slavery at Mount Vernon</a></li>
-			<li><a href="Farmtotable.html">Farm to Table</a></li>
+			<li><a href="#">Slavery at Mount Vernon</a></li>
+			<li><a href="#">Farm to Table</a></li>
 		</ul>
 	</li>
 	<li><a href="#">The Table</a>
@@ -61,16 +60,16 @@
 
 <div id="imgBox">
 
-<h1>Drinks with the Washingtons</h1>
-<h3>Large Dining Room, Mount Vernon </h3>
+<h1>Dessert with the Washingtons</h1>
+<h3> Served after dinner, Large Dining Room, Mount Vernon </h3>
 
 <div class="container">
 
 <img src="diningroom.jpg" style="float: left"/>
 
     <div class="galleryItem">
-     <img src="tea.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');">Tea
+     <img src="cake.gif">
+<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');">Cake
 </p>
 	<div id="image1" class="popup">
 	<div class="cancel" onclick="closePopup('image1');">X</div>
@@ -78,48 +77,43 @@
 	</div>
 
     </div>
-
-  <div class="galleryItem">
-          <img src="beer.gif">
-         <p style="font-weight:bold">Beer</p>
-    </div>
-
-  <div class="galleryItem">
-       <img src="coffee.gif">
-         <p style="font-weight:bold">Coffee</p>
-    </div>
-
  
-    <div class="galleryItem">
-     <img src="wine.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');">Wine
-</p>
-	<div id="image1" class="popup">
-	<div class="cancel" onclick="closePopup('image1');">X</div>
-	<br>something here!
-	</div>
+     <div class="galleryItem">
+          <img src="fruit.gif">
+         <p style="font-weight:bold">Fruit</p>
+    </div>
 
+  <div class="galleryItem">
+          <img src="nuts.gif">
+         <p style="font-weight:bold">Nuts</p>
+    </div>
+
+  <div class="galleryItem">
+       <img src="pie.gif">
+         <p style="font-weight:bold">Pie</p>
     </div>
 
     <div class="galleryItem">
-     <img src="cocoa.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');">Cocoa
+     <img src="icecream.gif">
+<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image2');">Ice Cream
 </p>
-	<div id="image1" class="popup">
-	<div class="cancel" onclick="closePopup('image1');">X</div>
-	<br>something here!
+	<div id="image2" class="popup">
+	<div class="cancel" onclick="closePopup('image2');">X</div>
+	<p>In 1784, the Washingtons purchased a “Cream Machine for Ice” so they could make a summer favorite…ice cream!</p>
+	<p>The ice cream machine was a large bucket where slaves mixed together cream, sugar and strawberries until they were whipped together. Washington's ice cream would be a lot softer than the ice cream we have today.</p>
 	</div>
 
     </div>
 
 
   <div class="galleryItem">
-         <img src="punch.gif">
-         <p style="font-weight:bold">Punch</p>
+         <img src="tarts.gif">
+         <p style="font-weight:bold">Tarts</p>
     </div>
 
 
-<h2 style= "float:right; padding: 2px;">Thanks for dining with us!</h2>
+<p><a href="DrinkswiththeWashingtons.html"><span style="font-size:250%; float:right; padding: 2px;">&rarr;</span></a></p>
+<h2 style= "float:right; padding: 2px;">What is there to drink?</h2>
 
 </div>
 
@@ -142,9 +136,9 @@
 
 <h1> Did you know?</h1>
 
-<p style= "font-size: 14pt;"><img src="GeorgeWashingtonFact.gif" style="float: right"/>Washington would occasionally end the meal with a toast. He would lift his glass and say, "To all our friends." The guests then would respond by saying "Huzzah!" three times and then everyone at the table took a sip of their drink.</p>
+<p style= "font-size: 14pt;"><img src="GeorgeWashingtonFact.gif" style="float: right"/>The Washington's loved ice cream! Freezers didn't exist yet, so the Washington's had ice collected from the river during cold months to chill food, drinks and…ice cream!</p>
 
-<h2> "Huzzah, huzzah, huzzah!"</h2>
+<h2> We all scream for ice cream!</h2>
 
 </div>
 

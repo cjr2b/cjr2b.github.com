@@ -41,8 +41,8 @@
 	<li><a href="#">Introduction</a>
 		<ul>
 			<li><a href="MountVernon.html">Mount Vernon: A Home</a></li>
-			<li><a href="slavery.html">Slavery at Mount Vernon</a></li>
-			<li><a href="Farmtotable.html">Farm to Table</a></li>
+			<li><a href="#">Slavery at Mount Vernon</a></li>
+			<li><a href="#">Farm to Table</a></li>
 		</ul>
 	</li>
 	<li><a href="#">The Table</a>
@@ -107,7 +107,7 @@
 </p>
 	<div id="image3" class="popup">
 	<div class="cancel" onclick="closePopup('image3');">X</div>
-	<p>Mrs. Washington loved vegetables and said they were “the best part of living in the country.” Peas were among the many vegetables the Washingtons grew—and then ate—at Mount Vernon. Throughout their two gardens, they grew typical vegetables, like broccoli and carrots, and more interesting ones, like artichokes and asparagus.</p>
+	<p>Mrs. Washington loved vegetables and said they were “the best part of living in the country.” Peas were among the many vegetables the Washingtons grew—and then ate—at Mount Vernon. There were typical vegetables, like broccoli and carrots, and more interesting ones, like artichokes and asparagus, throughout Washington's two gardens.</p>
 	</div>
 
     </div>
