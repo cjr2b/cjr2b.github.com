@@ -173,7 +173,7 @@ img {
 	cursor: pointer; 
 	margin: 0px 30px 0px 30px; 
 	padding: 10px; 
-	align: center; 
+	align: left; 
 	}
 
 #sidebar ul { 
@@ -228,6 +228,11 @@ img {
     padding: 1px; 
     text-align: center; 
 }
+
+.galleryItem p { 
+	font: Georgia, serif; 
+	text-align: center; 
+	}
 
 .popup{ 
 	position: absolute; 
@@ -287,10 +292,13 @@ body {
 	margin: auto; 
 	padding: 0; 
 	}
+
 #nav li { 
 	float: none; 
+	clear: both; 
+	border: 1px solid;
+	width: 90%; 
 	}
-
 
 #imgBox { 
 	width: 90%; 
@@ -310,7 +318,8 @@ body {
 	}
 
 #imgBox p{ 
-	font-size: 10pt; 
+	font-size: 9pt; 
+	margin: auto: 
 	}
 
 #header img{ 
@@ -322,7 +331,7 @@ body {
 #sidebar {  
 	float: left; 
 	width: 90%;  
-	margin: 0px 0px 5px 30px; 
+	margin: 0px 0px 5px 20px; 
 	}
 
 #sidebar li { 
@@ -341,19 +350,4 @@ body {
 	}
 	
 	
-	
-}
-
-@media screen and (max-width: 650px) {
-
-#nav { 
-	margin: 5px 5px 5px 60px;
-	} 
-
-#nav li {
-	clear: both; 
-	border: 1px solid;
-	width: 90%;  
-    		}
-
 }
