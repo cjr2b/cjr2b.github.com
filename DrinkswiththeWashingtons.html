@@ -24,6 +24,30 @@
 
 <script type="text/javascript" src="popup.js"></script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+        // Tooltip only Text
+        $('.masterTooltip').hover(function(){
+                // Hover over code
+                var title = $(this).attr('title');
+                $(this).data('tipText', title).removeAttr('title');
+                $('<p class="tooltip"></p>')
+                .text(title)
+                .appendTo('body')
+                .fadeIn('slow');
+        }, function() {
+                // Hover out code
+                $(this).attr('title', $(this).data('tipText'));
+                $('.tooltip').remove();
+        }).mousemove(function(e) {
+                var mousex = e.pageX + 20; //Get X coordinates
+                var mousey = e.pageY + 10; //Get Y coordinates
+                $('.tooltip')
+                .css({ top: mousey, left: mousex })
+        });
+});
+</script>
 
 </head>
 
@@ -69,14 +93,9 @@
 <img src="diningroom.jpg" style="float: left"/>
 
     <div class="galleryItem">
-     <img src="tea.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');closePopup('image2');closePopup('image3');">Tea
-</p>
-	<div id="image1" class="popup">
-	<div class="cancel" onclick="closePopup('image1');">X</div>
-	<p> Tea was very important to Virginians, but not because of its taste. Having tea with friends or family was an important social event for talking and showing off manners. To make and drink tea back then, one had to know how to use the different plates, bowls, spoons and ingredients. </p>
-<p>At Mount Vernon, Washington had tea served every day after dinner. </p>
-	</div>
+     <img src="tea.gif" style="cursor:pointer;" class="masterTooltip" title="Tea was very important to Virginians, but not because of its taste. Having tea with friends or family was an important social event for talking and showing off manners. To make and drink tea back then, one had to know how to use the different plates, bowls, spoons and ingredients. At Mount Vernon, Washington had tea served every day after dinner."/>
+
+	<p style="font-weight: bold;">Tea</p>
 
     </div>
 
@@ -92,28 +111,18 @@
 
  
     <div class="galleryItem">
-     <img src="wine.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image2');closePopup('image1');closePopup('image3');">Wine
-</p>
-	<div id="image2" class="popup">
-	<div class="cancel" onclick="closePopup('image2');">X</div>
-	<p>Though adults drink it more for special occasions today, wine was a common drink at Mount Vernon. Today, we know how to make water safe to drink but, in Washington's day, the water could make you sick. Washington had to find other things to drink, like wine.</p>
+     <img src="wine.gif" style="cursor:pointer;" class="masterTooltip" title="Though adults drink it more for special occasions today, wine was a common drink at Mount Vernon. Today, we know how to make water safe to drink but, in Washington's day, the water could make you sick. Washington had to find other things to drink, like wine. Washington bought wines from many countries but his favorite was Maderia, which came from Portugal."/>
 
-<p> Washington bought wines from many countries but his favorite was Maderia, which came from Portugal.</p>
-	</div>
+	<p style="font-weight: bold;">Wine</p>
+	
+	
 
     </div>
 
     <div class="galleryItem">
-     <img src="cocoa.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image3');closePopup('image1');closePopup('image2');">Cocoa
-</p>
-	<div id="image3" class="popup">
-	<div class="cancel" onclick="closePopup('image3');">X</div>
-	<p> In the eighteenth-century, chocolate candy wasn't invented yet! The only way to get chocolate was to drink it. Colonial chocolate was less sweet than the cocoa we are used to. Colonists added sugar, cinnamon, vanilla, red pepper and other ingredients to make it less bitter. </p>
+     <img src="cocoa.gif" style="cursor:pointer;" class="masterTooltip" title="In the eighteenth-century, chocolate candy wasn't invented yet! The only way to get chocolate was to drink it. Colonial chocolate was less sweet than the cocoa we are used to. Colonists added sugar, cinnamon, vanilla, red pepper and other ingredients to make it less bitter. Mrs. Washington liked to have hot chocolate for breakfast with her toast."/>
 
-<p>Mrs. Washington liked to have hot chocolate for breakfast with her toast. </p>
-	</div>
+	<p style="font-weight: bold;">Cocoa</p>
 
     </div>
 

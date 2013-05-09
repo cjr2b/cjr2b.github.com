@@ -24,6 +24,32 @@
 
 <script type="text/javascript" src="popup.js"></script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+        // Tooltip only Text
+        $('.masterTooltip').hover(function(){
+                // Hover over code
+                var title = $(this).attr('title');
+                $(this).data('tipText', title).removeAttr('title');
+                $('<p class="tooltip"></p>')
+                .text(title)
+                .appendTo('body')
+                .fadeIn('slow');
+        }, function() {
+                // Hover out code
+                $(this).attr('title', $(this).data('tipText'));
+                $('.tooltip').remove();
+        }).mousemove(function(e) {
+                var mousex = e.pageX + 20; //Get X coordinates
+                var mousey = e.pageY + 10; //Get Y coordinates
+                $('.tooltip')
+                .css({ top: mousey, left: mousex })
+        });
+});
+</script>
+
+
 </head>
 
 <body>
@@ -68,19 +94,14 @@
 <img src="diningroom.jpg" style="float: left"/>
 
     <div class="galleryItem">
-     <img src="cake.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');closePopup('image2');">Cake
-</p>
-	<div id="image1" class="popup">
-	<div class="cancel" onclick="closePopup('image1');">X</div>
-	<p> Cake was for special occasions at Mount Vernon. Mrs. Washington had a famous "Great Cake" that was specially made for the Christmas holidays.</p>
-	<p> Why was this cake called the Great Cake? The recipe called for 40 eggs, 4 pounds of butter and 4 pounds of sugar. That is a <i>lot</i> of ingredients! Most cakes today only use about 4 eggs and 1/2 a pound of sugar!
-	</div>
+     <img src="cake.gif" style="cursor:pointer;" class="masterTooltip" title="Cake was for special occasions at Mount Vernon. Mrs. Washington had a famous Great Cake that was specially made for the Christmas holidays. Why was this cake called the Great Cake? The recipe called for 40 eggs, 4 pounds of butter and 4 pounds of sugar. That is a lot of ingredients! Most cakes today only use about 4 eggs and 1/2 a pound of sugar!"/>
+
+	<p style="font-weight: bold;">Cake</p>
 
     </div>
  
      <div class="galleryItem">
-          <img src="fruit.gif">
+         <img src="fruit.gif">
          <p style="font-weight:bold">Fruit</p>
     </div>
 
@@ -95,14 +116,11 @@
     </div>
 
     <div class="galleryItem">
-     <img src="icecream.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer; font-size:11pt;" onClick="openPopup('image2');closePopup('image1');">Ice Cream
-</p>
-	<div id="image2" class="popup">
-	<div class="cancel" onclick="closePopup('image2');">X</div>
-	<p>In 1784, the Washingtons purchased a “Cream Machine for Ice” so they could make a summer favorite…ice cream!</p>
-	<p>The ice cream machine was a large bucket where slaves mixed together cream, sugar and strawberries until they were whipped together. Washington's ice cream would be a lot softer than the ice cream we have today.</p>
-	</div>
+     <img src="icecream.gif" style="cursor:pointer;" class="masterTooltip" title="In 1784, the Washingtons purchased a “Cream Machine for Ice” so they could make a summer favorite…ice cream!The ice cream machine was a large bucket where slaves mixed together cream, sugar and strawberries until they were whipped together. Washington's ice cream would be a lot softer than the ice cream we have today."</>
+
+	<p style="font-weight:bold">Ice Cream</p>
+
+	
 
     </div>
 
