@@ -25,6 +25,30 @@
 
 <script type="text/javascript" src="popup.js"></script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+        // Tooltip only Text
+        $('.masterTooltip').hover(function(){
+                // Hover over code
+                var title = $(this).attr('title');
+                $(this).data('tipText', title).removeAttr('title');
+                $('<p class="tooltip"></p>')
+                .text(title)
+                .appendTo('body')
+                .fadeIn('slow');
+        }, function() {
+                // Hover out code
+                $(this).attr('title', $(this).data('tipText'));
+                $('.tooltip').remove();
+        }).mousemove(function(e) {
+                var mousex = e.pageX + 20; //Get X coordinates
+                var mousey = e.pageY + 10; //Get Y coordinates
+                $('.tooltip')
+                .css({ top: mousey, left: mousex })
+        });
+});
+</script>
 
 </head>
 
@@ -63,35 +87,25 @@
 <div id="imgBox">
 
 <h1>Dinner with the Washingtons</h1>
-<h3> Served at 3 p.m., Large Dining Room, Mount Vernon </h3>
+<h3 style="font-size: 10pt; text-align: center;">Hover over some of the items to learn more</h3>
 
 <div class="container">
 
 <img src="diningroom.jpg" style="float: left"/>
 
     <div class="galleryItem">
-     <img src="ham.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image1');">Ham</p>
+     <img src="ham.gif" class="masterTooltip" title="Ham was very popular in Virginia and was served every day at Mount Vernon. Pork was a great meat for colonists because, when salted and smoked, it tasted good and lasted for years. Mrs. Washington's hams were famous. She had her hams smoked over burning corn cobs instead of wood, giving the meat a distinct flavor."/>
+
+	<p style="font-weight: bold;" >Ham</p>
 	
-	<div id="image1" class="popup">
-	<div class="cancel" onclick="closePopup('image1');">X</div>
-	<p>Ham was very popular in Virginia and was served every day at Mount Vernon. Pork was a great meat for colonists because, when salted and smoked, it tasted good and lasted for years.</p>
-
-<p>Mrs. Washington's hams were famous. She had her hams smoked over burning corn cobs instead of wood, giving the meat a distinct flavor.
 	</div>
-
-    </div>
  
         <div class="galleryItem">
-     <img src="fish.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image2');">Fish</p>
-	
-<div id="image2" class="popup">
-	<div class="cancel" onclick="closePopup('image2');">X</div>
-<p>Fish was one of Washington’s favorites! The Washingtons enjoyed lots of different seafood at Mount Vernon, including anchovies, herring, oysters and shad.</p> <p>But the Washingtons didn’t just eat the fish they caught. They sold them too! Slaves worked hard and could catch as much as half a million fish in just a few months!</p>
-	</div>
+     <img src="fish.gif" class="masterTooltip" title="Fish was one of Washington’s favorites! The Washingtons enjoyed lots of different seafood at Mount Vernon, including anchovies, herring, oysters and shad. But the Washingtons didn’t just eat the fish they caught. They sold them too! Slaves worked hard and could catch as much as half a million fish in just a few months!"/>
 
-    </div>
+	<p style="font-weight: bold;">Fish</p>
+	
+	</div>
 
   <div class="galleryItem">
           <img src="soup.gif">
@@ -104,15 +118,11 @@
     </div>
 
     <div class="galleryItem">
-     <img src="peas.gif">
-<p style="color: rgb(199, 75, 47);font-weight: bold;cursor: pointer;" onClick="openPopup('image3');">Peas
-</p>
-	<div id="image3" class="popup">
-	<div class="cancel" onclick="closePopup('image3');">X</div>
-	<p>Mrs. Washington loved vegetables and said they were “the best part of living in the country.” Peas were among the many vegetables the Washingtons grew—and then ate—at Mount Vernon. Throughout their two gardens, they grew typical vegetables, like broccoli and carrots, and more interesting ones, like artichokes and asparagus.</p>
-	</div>
+     <img src="peas.gif" class="masterTooltip" title="Mrs. Washington loved vegetables and said they were “the best part of living in the country.” Peas were among the many vegetables the Washingtons grew—and then ate—at Mount Vernon. Throughout their two gardens, they grew typical vegetables, like broccoli and carrots, and more interesting ones, like artichokes and asparagus."/>
 
-    </div>
+	<p style="font-weight: bold;">Peas</p>
+
+	</div>
 
 
   <div class="galleryItem">

@@ -240,13 +240,13 @@ img {
 	display: none; 
 	background-color: rgb(128, 128, 128); 
 	font-family: Georgia, serif; 
-	top: 200px; 
-	right: 10px; 
+	top: 300px; 
+	right: 10%; 
 	margin: auto; 
-	width: 200px; 
+	width: 210px; 
 	height: 350px; 
 	padding: 10px; 
-	border: 2px solid black; 
+	border: 1px solid black; 
 } 
 
 .popup p{ 
@@ -272,6 +272,21 @@ img {
 .cancel:hover {
 	color: rgb(199, 75, 47); 
 }
+
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:rgb(128,128,128);
+	border-radius:5px;
+	padding:10px;
+	color:black;
+	font-size:12px Arial;
+}
+
+	
+
 
 
 /*
@@ -348,6 +363,7 @@ body {
 .image { 
 	display: none; 
 	}
-	
-	
+
+
+
 }
