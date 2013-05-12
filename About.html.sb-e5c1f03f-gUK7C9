@@ -1,0 +1,109 @@
+<?xml version= "1.0" encoding="UF -8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+<meta charset="utf-8">
+
+
+<title>The Dish on Washington</title>
+
+
+
+<link rel="stylesheet" type:"text/css" href="styles3.css" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="header">
+	<img src="logo.gif"/>
+</div>
+
+<div id="nav">
+	<li><a href="Homepage.html">Home</a></li>
+	<li><a href="About.html">About</a></li>
+	<li><a href="Introduction.html">Introduction</a>
+		<ul>
+			<li><a href="MountVernon.html">Mount Vernon: A Home</a></li>
+			<li><a href="slavery.html">Slavery at Mount Vernon</a></li>
+			<li><a href="Farmtotable.html">Farm to Table</a></li>
+		</ul>
+	</li>
+	<li><a href="TheTable.html">The Table</a>
+	<ul>
+	<li><a href="DiningwiththeWashingtons.html">Dining with the Washingtons</a></li>
+		<li><a href="TableManners.html">Table Manners</a></li>
+		<li><a href="PatrioticFoods.html">Patriotic Foods</a></li>
+		<li><a href="CostofDining.html">The Cost of Dining</a></li>
+	</ul>			
+	</li>
+	<li><a href="Recipes.html">Recipes</a></li>
+
+</div>
+
+
+<div id="content">
+
+<div id="imgBox">
+
+<h1>About 'The Dish on Washington'</h1>
+
+<img src="silverware2.gif" style="float:right";/>
+
+<p>This site is the final project for <a href="http://clioweb.org/courses/history697/spring13/">HIST 697</a> at George Mason University. It will explore the world of elite colonial Virginia dining through the experience of George Washington and his family. </p>
+
+<p> While exploring this site, it is important to note that Washington's life in many ways was exceptional. The way his family lived and ate were very different from other Virginians who were not as wealthy or who were enslaved.
+
+<img src="familyportrait.jpg"style="float:right";/>
+
+<p> Even though their story is not discussed in-depth here, it is also important to remember that there were many other people who lived at Mount Vernon. A community of almost 300 enslaved people had their own unique experiences with food and dining, separate from the Washingtons.</p>
+
+</div>
+
+<div class="image">
+
+<img src="plate.gif"/>
+
+
+</div>
+
+<div id="sidebar">
+
+<h3> Look out for fun facts!</h3>
+
+<img src="GeorgeWashingtonFact.gif"/>
+
+<p style="float: left;">When you see this icon:</p>
+
+
+
+<p style="float: right;"> That means there is an interesting fact about the Washingtons and food. Keep an eye out!</p>	
+	
+
+
+</div>
+
+</div>
+
+<div id="footer">
+
+<p> Christina| HIST 697 | George Mason University | Spring 2013 </p>
+
+</div>
+
+
+</body>
+
+</html>
