@@ -572,9 +572,7 @@
       rotateCarousel(1);
     }
     
-    /**
-     * Navigation with arrow keys
-     */
+
     $(document).keydown(function(e) {
       if (options.keyboardNav) {
         // arrow left or up
@@ -588,14 +586,7 @@
           options.autoPlay = 0;
           moveOnce('forward');
         }
-        // should we override the normal functionality for the arrow keys?
-        if (options.keyboardNavOverride && (
-            (options.orientation == 'horizontal' && (e.which === 37 || e.which === 39)) ||
-            (options.orientation == 'vertical' && (e.which === 38 || e.which === 40))
-          )) {
-          e.preventDefault();
-          return false;
-        }
+       
       }
     });
 
@@ -663,7 +654,7 @@
     autoPlay:                   0,                 // indicate the speed in milliseconds to wait before autorotating. 0 to turn off. Can be negative
     orientation:                'horizontal',      // indicate if the carousel should be 'horizontal' or 'vertical'
     activeClassName:            'carousel-center', // the name of the class given to the current item in the center
-    keyboardNav:                false,             // set to true to move the carousel with the arrow keys
+    keyboardNav:                true,             // set to true to move the carousel with the arrow keys
     keyboardNavOverride:        true,              // set to true to override the normal functionality of the arrow keys (prevents scrolling)
     imageNav:                   true,              // clicking a non-center image will rotate that image to the center
 
